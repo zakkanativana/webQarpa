@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f2f2f2;">
+
+
+    <div class="container bg-light p-4">
+        <div class="mx-auto">
+            <div class="navigasi-pos mb-4">
+                <a href="KaryawanDashboard.html">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h4 class="mb-0 mx-auto font-weight-bold "> Penyimpanan Barang </h4>
+            </div>
+
+            <div class="card-pilihCabang">
+                <div class="namaKaryawan justify-content-between mb-3 w-100">
+                    <h6 style="color: #202939; font-weight: 700;"> Penyimpanan Barang </h6>
+                    <a href="KaryawanPenyimpananTambahBarang.html" class="btn btn-primary"> Tambah Barang </a>
+                </div>
+                <div class="search-produkPos" style="padding-right: 8px !important; width: 100%;">
+                    <input type="text" class="form-control" placeholder="Cari Barang " style="border: none !important; box-shadow: none;">
+                    <img src="assets/POS/icon4.svg" alt=""></span>
+                </div>
+                <div class="btn-penerimaan w-100">
+                    <div class="input-group mb-3">
+                        <input type="date" class="form-control" placeholder="Username" style="font-size: 14px;">
+                    </div>
+                    <div class="dropdown w-100 d-block">
+                        <button class="btn btn-secondary dropdown-toggle w-100"
+                            style="font-size: 14px; background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kategori
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"> Selesai </a>
+                            <a class="dropdown-item" href="#"> Proses </a>
+                            <a class="dropdown-item" href="#"> Dibatalkan </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700; width: 100%;"> Tepung Maizena </h5>
+                        <div class="dropdown w-20 d-block">
+                            <button class="w-50"
+                                style="font-size: 12px; background-color: #fff; color: #000; border:0px;" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
+                               <img src="assets/inventory/icon1.svg" alt="">
+                            </button>
+                            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="KaryawanPenyimpananEditBarang.html"> Edit </a>
+                                <a class="dropdown-item" href="#"> Hapus </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wadah-audit">
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Tanggal Restok </h6>
+                                <p style="color: #697586;;"> 20/02/2023 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Total Stok </h6>
+                                <p style="color: #697586;;"> 100Kg </p>
+                            </div>
+                        </div>
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Harga Beli </h6>
+                                <p style="color: #697586;;"> Rp.50.000 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Harga Jual </h6>
+                                <p style="color: #697586;;"> Rp.120.000 </p>
+                            </div>
+                        </div>
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Kategori </h6>
+                                <p style="color: #697586;"> Bahan Baku  </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Penggunaan Pertransaksi </h6>
+                                <p style="color: #697586;"> 1pcs </p>
+                            </div>
+                        </div>
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Yang bertanggung jawab </h6>
+                                <p style="color: #697586;;"> Karyawan UMKM </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Penempatan Barang </h6>
+                                <p style="color: #697586;;"> Cabang Gejayan </p>
+                            </div>
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700; width: 100%;"> Gula </h5>
+                        <div class="dropdown w-20 d-block">
+                            <button class="w-50"
+                                style="font-size: 12px; background-color: #fff; color: #000; border:0px;" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
+                               <img src="assets/inventory/icon1.svg" alt="">
+                            </button>
+                            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="KaryawanPenyimpananEditBarang.html"> Edit </a>
+                                <a class="dropdown-item" href="#"> Hapus </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wadah-audit">
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Tanggal Restok </h6>
+                                <p style="color: #697586;;"> 20/02/2023 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Total Stok </h6>
+                                <p style="color: #697586;;"> 100Kg </p>
+                            </div>
+                        </div>
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Harga Beli </h6>
+                                <p style="color: #697586;;"> Rp.50.000 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Harga Jual </h6>
+                                <p style="color: #697586;;"> Rp.120.000 </p>
+                            </div>
+                        </div>
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Kategori </h6>
+                                <p style="color: #697586;"> Makanan </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Penggunaan Pertransaksi </h6>
+                                <p style="color: #697586;"> 1pcs </p>
+                            </div>
+                        </div>
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Yang bertanggung jawab </h6>
+                                <p style="color: #697586;;"> Karyawan UMKM </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152; font-size: 12px;"> Penempatan Barang </h6>
+                                <p style="color: #697586;;"> Cabang Gejayan </p>
+                            </div>
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

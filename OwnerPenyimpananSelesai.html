@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f2f2f2;">
+
+
+    <div class="container bg-light p-4">
+        <div class="mx-auto">
+            <div class="navigasi-pos mb-4">
+                <a data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h5 class="mb-0 mx-auto font-weight-bold"> Tambah Barang </h5>
+                <!-- <a href="Dashboard.html">
+                    <img src="assets/POS/home.svg" alt="">
+                </a> -->
+            </div>
+
+            <div class="img-pembayaran mx-auto mb-5">
+                <h5 style="font-size: 18px; font-weight: 700;" class="text-center"> Penambahan Barang Dibuat </h5>
+                <img src="assets/POS/icon10.svg" alt="">
+
+            </div>
+
+
+            <div class="card-selesaiPembayaran mb-4">
+                <h5 style="font-size: 16px; font-weight: 700;"> Rincian Penambahan </h5>
+                <div class="produk-item d-block p-2">
+                    <div class="namaKaryawan justify-content-between mb-2">
+                        <h4 style="font-size: 14px; margin-bottom: 0; width: 100%;" class="p-0"> Waktu Penerimaan </h4>
+                    </div>
+                    <div class="sectionTotal">
+                        <h4 style="font-size: 14px; margin-bottom: 0; width: 100%;" class="mb-2"> 20 / 05 / 2023 </h4>
+                    </div>
+                </div>
+                <div class="produk-item">
+                    <div class="list-harga-item">
+                        <h5 style="font-size: 16px;  margin-bottom: 0; width: 100%;"> Yang bertanggung jawab </h5>
+                    </div>
+                    <p style="margin-bottom: 0;"> : </p>
+                    <p style="margin-bottom: 0; color: #000; width: 60%;"> Owner UMKM </p>
+                </div>
+                <div class="produk-item">
+                    <div class="list-harga-item">
+                        <h5 style="font-size: 16px;  margin-bottom: 0; width: 100%;"> Nama barang </h5>
+                    </div>
+                    <p style="margin-bottom: 0;"> : </p>
+                    <p style="margin-bottom: 0; color: #000; width: 60%;"> Tepung </p>
+                </div>
+                <div class="produk-item">
+                    <div class="list-harga-item">
+                        <h5 style="font-size: 16px;  margin-bottom: 0; width: 100%;"> Harga Beli </h5>
+                    </div>
+                    <p style="margin-bottom: 0;"> : </p>
+                    <p style="margin-bottom: 0; color: #000; width: 60%;"> Rp.50.000 </p>
+                </div>
+                <div class="produk-item">
+                    <div class="list-harga-item">
+                        <h5 style="font-size: 16px;  margin-bottom: 0; width: 100%;"> Harga Jual </h5>
+                    </div>
+                    <p style="margin-bottom: 0;"> : </p>
+                    <p style="margin-bottom: 0; color: #000; width: 60%;"> Rp.120.000 </p>
+                </div>
+                <div class="produk-item">
+                    <div class="list-harga-item">
+                        <h5 style="font-size: 16px;  margin-bottom: 0; width: 100%;"> Stok barang </h5>
+                    </div>
+                    <p style="margin-bottom: 0;"> : </p>
+                    <p style="margin-bottom: 0; color: #000; width: 60%;"> 20 Kg </p>
+                </div>
+                <div class="produk-item">
+                    <div class="list-harga-item">
+                        <h5 style="font-size: 16px;  margin-bottom: 0; width: 100%;"> Jumlah penggunaan pertransaksi
+                        </h5>
+                    </div>
+                    <p style="margin-bottom: 0;"> : </p>
+                    <p style="margin-bottom: 0; color: #000; width: 60%;"> 1pcs </p>
+                </div>
+                <div class="produk-item">
+                    <div class="list-harga-item">
+                        <h5 style="font-size: 16px;  margin-bottom: 0; width: 100%;"> Kategori barang </h5>
+                    </div>
+                    <p style="margin-bottom: 0;"> : </p>
+                    <p style="margin-bottom: 0; color: #000; width: 60%;"> Makanan </p>
+                </div>
+                <div class="produk-item">
+                    <div class="list-harga-item">
+                        <h5 style="font-size: 16px;  margin-bottom: 0; width: 100%;"> Penempatan </h5>
+                    </div>
+                    <p style="margin-bottom: 0;"> : </p>
+                    <p style="margin-bottom: 0; color: #000; width: 60%; font-size: 14px;"> Cabang Gejayan </p>
+                </div>
+
+            </div>
+
+            <button class="btn-pembayaran text-light" style="top: 1090px;" data-toggle="modal"
+                data-target="#exampleModal"> Selesaikan Tambah Barang </button>
+
+
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h4> Tambah Barang Berhasil </h4>
+                </div>
+                <div class="text-center">
+                    <img src="assets/shipping/icon3.svg" alt="" width="250" class="text-center">
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <a class="btn btn-primary w-100" href="OwnerPenyimpanan.html"> Kembali ke Penyimpanan </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

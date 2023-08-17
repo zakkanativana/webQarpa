@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f2f2f2;">
+    <div class="container p-4" style="background-color: #fff; height: 800px;">
+        <!-- Login Desc -->
+        <div class="row mb-5 hero-login">
+            <div class="col text-center">
+                <div class="fitur-desc">
+                    <h4 style="font-weight: 700;"> Hi Bos, Welcome To QARPA ! </h4>
+                    <p style="font-weight: 500;"> Silahkan isi data dibawah dengan valid </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Login Desc -->
+
+        <form class="mx-auto form-login">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1"> Ingat Saya </label>
+                <div class="float-right">
+                    <a href="#"> Lupa Password ? </a>
+                </div>
+            </div>
+
+                <a href="OwnerDashboard.html" class="btn btn-login mb-3" style="font-weight: 500;"> Login sebagai owner </a>
+                <a href="KaryawanDashboard.html" class="btn btn-login mb-5" style="font-weight: 500;"> Login sebagai Karyawan </a>
+      
+          
+            <div class="text-center">
+                <p> Belum Punya Akun ? <a href="register.html"> Daftar Sekarang </a> </p>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

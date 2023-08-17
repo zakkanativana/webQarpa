@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #cacaca;">
+
+
+    <div class="container bg-light p-4">
+        <div class="mx-auto">
+            <div class="navigasi-pos mb-4">
+                <a href="KaryawanCuti.html">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h5 class="mb-0 mx-auto font-weight-bold"> Tambah Cuti </h5>
+            </div>
+
+            <div class="card-pilihCabang">
+                <h5> Ajukan Cuti </h5>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Nama Karyawan </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Angkasa" disabled>
+                    </div>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Jenis Cuti
+                    </div>
+                    <div class="dropdown w-100 d-block">
+                        <button class="btn btn-secondary dropdown-toggle w-100 "
+                            style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pilih Jenis Cuti
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"> Izin </a>
+                            <a class="dropdown-item" href="#"> Liburan </a>
+                            <a class="dropdown-item" href="#"> Sakit </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Deskripsi </div>
+                    <textarea name="" id="" cols="30" rows="2" class="w-100"></textarea>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Tanggal Mulai </div>
+                    <div class="input-group mb-3">
+                        <input type="date" class="form-control" placeholder="Masukkan Nama Barang..">
+                    </div>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Tanggal Akhir </div>
+                    <div class="input-group mb-3">
+                        <input type="date" class="form-control" placeholder="Contoh : Rp.20.000">
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="btn-tambahPengiriman text-light" style="list-style: none;  text-decoration: none; top: 750px;"
+                data-toggle="modal" data-target="#exampleModal">
+                Ajukan Cuti
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    Apakah anda yakin ingin mengajukan cuti ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Tidak </button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"> Yakin </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h4> Pengajuan Cuti Berhasil </h4>
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/shipping/icon3.svg" alt="" width="250" class="text-center">
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <a class="btn btn-primary w-100" href="KaryawanCuti.html"> Kembali ke halaman awal </a>
+                    </div>
+                </div>
+            </div>
+ 
+    </div>
+
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

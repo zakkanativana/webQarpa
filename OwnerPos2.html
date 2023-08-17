@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #cacaca;">
+
+
+    <div class="container bg-light p-4" style="height: 1024px !important;">
+        <div class="mx-auto">
+            <div class="navigasi-pos mb-4">
+                <a data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h4 class="mb-0 mx-auto font-weight-bold"> Point Of Sales </h4>
+                <a href="OwnerDashboard.html">
+                    <img src="assets/POS/home.svg" alt="">
+                </a>
+            </div>
+
+            <div class="list-produk">
+                <div class="wadah-btn mb-3">
+                    <button class="btn-pilihPelanggan btn-danger" data-toggle="modal" data-target="#exampleModal">
+                        Tutup Toko
+                    </button>
+                    <a class="btn-pilihPelanggan" href="" style="text-decoration: none; color: #000;">
+                        <img src="assets/POS/icon3.svg" alt="" width="20">
+                        Pilih Pelanggan
+                    </a>
+                </div>
+
+
+                <div class="search-produkPos" style="padding-right: 8px !important;">
+                    <input type="text" class="form-control" placeholder="Cari dan Tambahkan Produk "
+                        style="border: none !important; box-shadow: none;">
+                    <img src="assets/POS/icon4.svg" alt=""></span>
+                </div>
+
+                <h4 style="font-weight: 500;"> Daftar Produk </h4>
+
+                <div class="list-card-produk mx-auto">
+                    <div class="card-produk1">
+
+                        <div class="card-text-produk">
+                            <img src="assets/POS/icon5.svg" alt="" class="mr-4">
+                            <div class="tes">
+                                <h5 style="font-size: 16px; font-weight: 700;"> Minuman Cappucino </h5>
+                                <h6 style="font-size: 14px; font-weight: 300;"> Rp. 20.000 </h6>
+                            </div>
+                        </div>
+                        <div class="edit-produk">
+                            <button class="btn" style="box-shadow: none;">
+                                <img src="assets/POS/icon6.svg" alt="">
+                            </button>
+                            <h6> 1 </h6>
+                            <button class="btn" style="box-shadow: none;">
+                                <img src="assets/POS/icon7.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-produk1">
+
+                        <div class="card-text-produk">
+                            <img src="assets/POS/icon5.svg" alt="" class="mr-4">
+                            <div class="tes">
+                                <h5 style="font-size: 16px; font-weight: 700;"> Minuman Es Kepal </h5>
+                                <h6 style="font-size: 14px; font-weight: 300;"> Rp. 20.000 </h6>
+                            </div>
+                        </div>
+                        <div class="edit-produk">
+                            <button class="btn" style="box-shadow: none;">
+                                <img src="assets/POS/icon6.svg" alt="">
+                            </button>
+                            <h6> 1 </h6>
+                            <button class="btn" style="box-shadow: none;">
+                                <img src="assets/POS/icon7.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-produk1">
+
+                        <div class="card-text-produk">
+                            <img src="assets/POS/icon5.svg" alt="" class="mr-4">
+                            <div class="tes">
+                                <h5 style="font-size: 16px; font-weight: 700;"> Es Pocong </h5>
+                                <h6 style="font-size: 14px; font-weight: 300;"> Rp. 20.000 </h6>
+                            </div>
+                        </div>
+                        <div class="edit-produk">
+                            <button class="btn" style="box-shadow: none;">
+                                <img src="assets/POS/icon6.svg" alt="">
+                            </button>
+                            <h6> 1 </h6>
+                            <button class="btn" style="box-shadow: none;">
+                                <img src="assets/POS/icon7.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn-detailOrder" href="OwnerPos3.html" style="background-color: #155EEF;"> Detail Order </a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    Yakin ingin tutup toko ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Tidak </button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"> Yakin </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h4 class="mb-3"> Input Modal Akhir Kasir </h4>
+                    <input class="input-field-terbaru mb-3" placeholder="Inputkan Modal Akhir Kasir...">
+                    <div class="textInput" style="color: #000; background-color: #fff;"> Nominal </div>
+                    </input>
+                    <div class="form-group">
+                        <div class="textInputCatatan" style="color: #000; background-color: #fff;"> Catatan </div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Tidak </button>
+                    <a href="OwnerPos1.html" class="btn btn-primary"> Yakin </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

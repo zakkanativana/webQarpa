@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f2f2f2;">
+
+
+    <div class="container bg-light p-4">
+        <div class="mx-auto">
+            <div class="navigasi-pos mb-4">
+                <a href="OwnerDashboard.html">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h4 class="mb-0 mx-auto font-weight-bold"> Presensi </h4>
+            </div>
+
+            <div class="card-pilihCabang">
+                <h5> Riwayat Presensi Karyawan </h5>
+                <div class="dropdown w-100 d-block">
+                    <button class="btn btn-secondary dropdown-toggle w-100 "
+                        style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/shipping/icon4.svg" alt="">
+                        Pilih Cabang
+                    </button>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"> Selesai </a>
+                        <a class="dropdown-item" href="#"> Proses </a>
+                        <a class="dropdown-item" href="#"> Dibatalkan </a>
+                    </div>
+                </div>
+                <div class="btn-penerimaan">
+                    <div class="input-group mb-3" style="width: 50% !important;">
+                        <input type="date" class="form-control" placeholder="Username" style="width: 50% !important;">
+                    </div>
+                    <div class="search-produkPos" style="padding-right: 8px !important; width: 100%;">
+                        <input type="text" class="form-control" placeholder="Cari Karyawan "
+                            style="border: none !important; box-shadow: none;">
+                        <img src="assets/POS/icon4.svg" alt=""></span>
+                    </div>
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Angkasa </h5>
+                        <div class="dropdown w-20 d-block">
+                            <button class="w-50"
+                                style="font-size: 12px; background-color: #fff; color: #000; border:0px;" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
+                               <img src="assets/inventory/icon1.svg" alt="">
+                            </button>
+                            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"> Edit </a>
+                                <a class="dropdown-item" href="#"> Hapus </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Penempatan </h6>
+                        <div class="tags-item-total" style=" width: 80%; padding: 5px; background-color: #F5F5FF;">
+                            <p style="margin-bottom: 0; color: #4C4DDC;"> Cabang Gacoan Lempuyangan </p>
+                        </div>
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Tanggal Kehadiran </h6>
+                        <p style="color: #697586; margin-bottom: 0;"> 20 / 02 / 2023
+                        </p>
+                    </div>
+                    <div class="tgl-cuti">
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Waktu Datang </h6>
+                            <p style="color: #697586;;"> 08:00 </p>
+                        </div>
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Waktu Pulang </h6>
+                            <p style="color: #697586;;"> 17:00 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Zakkan Ativana </h5>
+                        <div class="dropdown w-20 d-block">
+                            <button class="w-50"
+                                style="font-size: 12px; background-color: #fff; color: #000; border:0px;" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
+                               <img src="assets/inventory/icon1.svg" alt="">
+                            </button>
+                            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"> Edit </a>
+                                <a class="dropdown-item" href="#"> Hapus </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Penempatan </h6>
+                        <div class="tags-item-total" style=" width: 70%; padding: 5px; background-color: #F5F5FF;">
+                            <p style="margin-bottom: 0; color: #4C4DDC;"> Cabang Gacoan Gejayan </p>
+                        </div>
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Tanggal Kehadiran </h6>
+                        <p style="color: #697586; margin-bottom: 0;"> 20 / 02 / 2023
+                        </p>
+                    </div>
+                    <div class="tgl-cuti">
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Waktu Datang </h6>
+                            <p style="color: #697586;;"> 08:00 </p>
+                        </div>
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Waktu Pulang </h6>
+                            <p style="color: #697586;;"> 17:00 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

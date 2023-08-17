@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f2f2f2;">
+
+
+    <div class="container bg-light p-4">
+        <div class="mx-auto">
+            <div class="navigasi-pos mb-4">
+                <a href="KaryawanDashboard.html">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h4 class="mb-0 mx-auto font-weight-bold"> Penugasan </h4>
+            </div>
+
+            <div class="card-pilihCabang">
+                <div class="btn-penerimaan">
+                    <div class="input-group mb-3">
+                        <input type="date" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="dropdown w-100 d-block">
+                        <button class="btn btn-secondary dropdown-toggle w-100"
+                            style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Status Izin
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"> Menunggu </a>
+                            <a class="dropdown-item" href="#"> Selesai </a>
+                            <a class="dropdown-item" href="#"> Dibatalkan </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Tambahkan Barang Inventory </h5>        
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Status Penugasan </h6>
+                        <div class="tags-item-total" style=" width: 80%; padding: 5px; background-color: #FFF9F2;">
+                            <p style="margin-bottom: 0; color: #734011;"> Menunggu </p>
+                        </div>
+                    </div>
+                    <div class="wadah-audit">
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Tugas </h6>
+                                <p style="color: #697586;;"> 20/02/2023 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Deadline </h6>
+                                <p style="color: #697586;;"> 20/07/2023 </p>
+                            </div>
+                        </div>
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Deskripsi </h6>
+                          <p> Tolong, tambahkan barang tepung dengan kategori bahan baku harga beli nya nanti di input di kas akhir pas toko tutup yaa. </p>
+                        </div>
+                        <a href="#" class="btn btn-primary d-block w-100" style="list-style: none;  text-decoration: none">
+                           Tandai Selesai
+                        </a>
+                    </div>
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Kirim barang ke cabang lain </h5>        
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Status Penugasan </h6>
+                        <div class="tags-item-total" style=" width: 80%; padding: 5px; background-color: #D3F8DF;">
+                            <p style="margin-bottom: 0; color: #20573D;"> Selesai </p>
+                        </div>
+                    </div>
+                    <div class="wadah-audit">
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Tugas </h6>
+                                <p style="color: #697586;;"> 20/02/2023 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Deadline </h6>
+                                <p style="color: #697586;;"> 20/07/2023 </p>
+                            </div>
+                        </div>
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Deskripsi </h6>
+                          <p> Tolong, tambahkan kirim bahan baku tepung 3kg ke cabang yogyakarta kota yaa dengan menggunakan motor kamu sendiri, untuk biaya bensin dan makan ambil di uang kas. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Beli barang di supplier </h5>        
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Status Penugasan </h6>
+                        <div class="tags-item-total" style=" width: 80%; padding: 5px; background-color: #FFF4F2;">
+                            <p style="margin-bottom: 0; color: #CB3A31;"> Dibatalkan </p>
+                        </div>
+                    </div>
+                    <div class="wadah-audit">
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Tugas </h6>
+                                <p style="color: #697586;;"> 20/02/2023 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Deadline </h6>
+                                <p style="color: #697586;;"> 20/07/2023 </p>
+                            </div>
+                        </div>
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Deskripsi </h6>
+                          <p> Tolong, tambahkan kirim bahan baku tepung 3kg ke cabang yogyakarta kota yaa dengan menggunakan motor kamu sendiri, untuk biaya bensin dan makan ambil di uang kas. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

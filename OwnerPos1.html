@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #cacaca;">
+
+
+    <div class="container bg-light p-4" style="height: 800px;">
+        <div class="mx-auto">
+            <div class="navigasi-pos mb-4">
+                <a href="OwnerDashboard.html">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h4 class="mb-0 mx-auto font-weight-bold"> Point Of Sales </h4>
+            </div>
+
+            <div class="card-pilihCabang">
+                <div class="namaKaryawan justify-content-between">
+                    <h5 style="color: #202939; font-weight: 700;"> Pilih Cabang Kamu  </h5>
+                    <a href="OwnerTambahCabang.html" class="btn-tambahCabang text-light" style="list-style: none;"> Tambah Cabang </a>
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Mie Gacoan - Kota </h5>
+                        <div class="dropdown w-20 d-block float-right">
+                            <button class="w-50"
+                                style="font-size: 12px; background-color: #fff; color: #000; border:0px;" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
+                               <img src="assets/inventory/icon1.svg" alt="">
+                            </button>
+                            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"> Edit </a>
+                                <a class="dropdown-item" href="#"> Hapus </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alamat-cabang">
+                        <h6 style="color: #888888;"> Alamat Cabang </h6>
+                        <div class="nama-jalan">
+                            <img src="assets/POS/icon2.svg" alt="" width="20">
+                            <p style="font-size: 14px; margin-bottom: 0 !important; "> Kota Yogyakarta </p>
+                        </div>
+                        <div class="nama-jalan">
+                            Kontak : 
+                            <p style="font-size: 14px; margin-bottom: 0 !important;"> 0878 - 8758 - 6851 </p>
+                        </div>                   
+                    </div>
+                    <button type="submit" class="btn-cabang text-light" data-toggle="modal" data-target="#exampleModal" style="background-color: #155EEF;"> Buka Toko </button>
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Mie Gacoan - Gejayan </h5>
+                        <div class="dropdown w-20 d-block float-right">
+                            <button class="w-50"
+                                style="font-size: 12px; background-color: #fff; color: #000; border:0px;" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown">
+                               <img src="assets/inventory/icon1.svg" alt="">
+                            </button>
+                            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"> Edit </a>
+                                <a class="dropdown-item" href="#"> Hapus </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alamat-cabang">
+                        <h6 style="color: #888888;"> Alamat Cabang </h6>
+                        <div class="nama-jalan">
+                            <img src="assets/POS/icon2.svg" alt="" width="20">
+                            <p style="font-size: 14px; margin-bottom: 0 !important;"> Gejayan Yogyakarta </p>
+                        </div>
+                        <div class="nama-jalan">
+                            Kontak : 
+                            <p style="font-size: 14px; margin-bottom: 0 !important;"> 0878 - 8758 - 6851 </p>
+                        </div>                   
+                    </div>
+                    <button type="submit" class="btn-cabang text-light" data-toggle="modal" data-target="#exampleModal" style="background-color: #D61C4E !important;"> Tutup Toko </button>
+                </div>
+
+            </div>
+
+
+          
+
+
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    Yakin ingin membuka toko ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Tidak </button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"> Yakin </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h4 class="mb-3"> Input Modal Kasir </h4>
+                    <input class="input-field-terbaru mb-3" placeholder="Inputkan Modal Kasir...">
+                    <div class="textInput" style="color: #000; background-color: #fff;"> Nominal </div>
+                    </input>
+                    <div class="form-group">
+                        <div class="textInputCatatan" style="color: #000; background-color: #fff;"> Catatan </div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Tidak </button>
+                    <a href="OwnerPos2.html" class="btn btn-primary"> Yakin </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

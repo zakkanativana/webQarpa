@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #cacaca;">
+
+
+    <div class="container bg-light p-4">
+        <div class="mx-auto">
+            <div class="navigasi-pos mb-4">
+                <a href="KaryawanDashboard.html">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h4 class="mb-0 mx-auto font-weight-bold"> Cuti </h4>
+            </div>
+
+            <div class="listStatusCuti mb-4">
+                <div class="listStatus1" style="color: #fff;">
+                    <h5> 1 </h5>
+                    <h6> Disetujui </h6>
+                </div>
+                <div class="listStatus1" style="background-color:#F7B548 !important; color: #fff;">
+                    <h5> 1 </h5>
+                    <h6> Menunggu </h6>
+                </div>
+                <div class="listStatus1" style="background-color:#D61C4E !important; color: #fff;">
+                    <h5> 1 </h5>
+                    <h6> Ditolak </h6>
+                </div>
+            </div>
+
+            <div class="card-pilihCabang" style="top: 180px;">
+                <div class="namaKaryawan justify-content-between">
+                    <h5 style="color: #202939; font-weight: 700;"> Riwayat Cuti  </h5>
+                    <a href="KaryawanTambahCuti.html" class="btn-tambahCabang text-light" style="list-style: none;"> Tambah Cuti </a>
+                </div>
+                <div class="btn-penerimaan">
+                    <div class="input-group mb-3">
+                        <input type="date" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="dropdown w-100 d-block">
+                        <button class="btn btn-secondary dropdown-toggle w-100"
+                            style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Status Cuti
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"> Menunggu </a>
+                            <a class="dropdown-item" href="#"> Selesai </a>
+                            <a class="dropdown-item" href="#"> Dibatalkan </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Liburan </h5>        
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Status Cuti </h6>
+                        <div class="tags-item-total" style=" width: 80%; padding: 5px; background-color: #FFF9F2;">
+                            <p style="margin-bottom: 0; color: #734011;"> Menunggu </p>
+                        </div>
+                    </div>
+                    <div class="wadah-audit">
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Mulai  </h6>
+                                <p style="color: #697586;;"> 20/02/2023 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Akhir </h6>
+                                <p style="color: #697586;;"> 20/07/2023 </p>
+                            </div>
+                        </div>
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Deskripsi </h6>
+                          <p> Saya izin liburan pak </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Izin </h5>        
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Status Cuti </h6>
+                        <div class="tags-item-total" style=" width: 80%; padding: 5px; background-color: #D3F8DF;">
+                            <p style="margin-bottom: 0; color: #20573D;"> Disetujui </p>
+                        </div>
+                    </div>
+                    <div class="wadah-audit">
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Mulai  </h6>
+                                <p style="color: #697586;;"> 20/02/2023 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Akhir </h6>
+                                <p style="color: #697586;;"> 20/07/2023 </p>
+                            </div>
+                        </div>
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Deskripsi </h6>
+                          <p> Saya izin istri melahirkan pak </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cabang1">
+                    <div class="namaKaryawan justify-content-between">
+                        <h5 style="color: #202939; font-weight: 700;"> Sakit </h5>        
+                    </div>
+                    <div class="statusTugas">
+                        <h6 style="color:#364152;"> Status Cuti </h6>
+                        <div class="tags-item-total" style=" width: 80%; padding: 5px; background-color: #FFF4F2;">
+                            <p style="margin-bottom: 0; color: #CB3A31;"> Ditolak </p>
+                        </div>
+                    </div>
+                    <div class="wadah-audit">
+                        <div class="tgl-cuti">
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Mulai  </h6>
+                                <p style="color: #697586;;"> 20/02/2023 </p>
+                            </div>
+                            <div class="statusTugas">
+                                <h6 style="color:#364152;"> Tanggal Akhir </h6>
+                                <p style="color: #697586;;"> 20/07/2023 </p>
+                            </div>
+                        </div>
+                        <div class="statusTugas">
+                            <h6 style="color:#364152;"> Deskripsi </h6>
+                          <p> Saya sakit flu biasa pak </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

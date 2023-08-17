@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f2f2f2;">
+
+
+    <div class="container" style="background-color: #fff; height: 800px !important; width: 390px !important;">
+        <div class="mx-auto">
+            <div class="navigasi-pos">
+                <a href="KaryawanPenyimpananTambahBarang.html">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h5 class="mb-0 mx-auto font-weight-bold"> Tambah Kategori </h5>
+            </div>
+
+            <div class="card-pilihCabang">
+                <h4> Tambah Kategori </h4>
+                <div class="stokBarang">
+                    <div class="produk-item d-block p-2">
+                        <div class="textStokBarang">
+                            <div class="mb-2"
+                                style="color: #000; background-color: #fff;  flex: none;order: 0;flex-grow: 1;"> Nama
+                                Kategori </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1"
+                                    style="font-size: 14px;">Tampilkan di POS </label>
+                            </div>
+                        </div>
+                        <div class="wadah-jumlahBarang">
+                            <div class="input-group w-100">
+                                <input type="text" class="form-control mb-2" placeholder="Tuliskan nama kategori..">
+                                <p style="font-size: 12px; color: #1746A2;"> Nama kategori yang diinputkan tidak boleh sama dengan kategori yang sudah ada</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="stokBarang">
+                    <div class="produk-item d-block p-2">
+                        <div class="textStokBarang">
+                            <div class="mb-2"
+                                style="color: #000; background-color: #fff;  flex: none;order: 0;flex-grow: 1; font-size:14px;"> Hubungkan dengan kategori lain </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2"
+                                    style="font-size: 14px;"> Aktif </label>
+                            </div>
+                        </div>
+                        <div class="produk-item d-block p-2 w-100">
+                            <div class="dropdown w-100 d-block mb-2">
+                                <button class="btn btn-secondary dropdown-toggle w-100"
+                                    style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pilih Kategori
+                                </button>
+                                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#"> Selesai </a>
+                                    <a class="dropdown-item" href="#"> Proses </a>
+                                    <a class="dropdown-item" href="#"> Dibatalkan </a>
+                                </div>
+                            </div>
+                            <p style="font-size: 12px; color: #B21741;"> Beberapa bahan tidak dapat ditampilkan di POS karena bahan tersebut merupakan bahan pendukung. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="OwnerPenyimpananTambahBarang.html" class="btn-tambahPengiriman text-light"
+                style="list-style: none;  text-decoration: none; top: 550px;">
+                Simpan Kategori
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="stokBarang">
+                        <div class="produk-item d-block p-2">
+                            <div class="textStokBarang">
+                                <div class="mb-2"
+                                    style="color: #000; background-color: #fff;  flex: none;order: 0; flex-grow: 1; text-align: left;">
+                                    Pilih Kategori </div>
+                                <a href="#" style="font-size: 12px;"> + Tambah Kategori </a>
+                            </div>
+
+                            <button class="btn btn-light w-100 text-left mb-2"> Makanan
+                                <img src="assets/icon/Icon/trash.svg" alt="" class="float-right mr-2">
+                                <img src="assets/icon/Icon/pencil-alt.svg" alt="" class="float-right mr-2">
+                                <img src="assets/icon/check.svg" alt="" class="float-right mr-2">
+                            </button>
+                            <button class="btn btn-light w-100 text-left mb-2"> Bahan Baku Mie
+                                <img src="assets/icon/Icon/trash.svg" alt="" class="float-right mr-2">
+                                <img src="assets/icon/Icon/pencil-alt.svg" alt="" class="float-right mr-2">
+                                <img src="assets/icon/check.svg" alt="" class="float-right mr-2">
+                            </button>
+                            <button class="btn btn-light w-100 text-left mb-2"> Bahan Baku Minuman
+                                <img src="assets/icon/Icon/trash.svg" alt="" class="float-right mr-2">
+                                <img src="assets/icon/Icon/pencil-alt.svg" alt="" class="float-right mr-2">
+                                <img src="assets/icon/check.svg" alt="" class="float-right mr-2">
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

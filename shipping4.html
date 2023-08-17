@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QARPA </title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f2f2f2;">
+
+
+    <div class="container" style="background-color: #fff; height: 1224px !important; width: 390px !important;">
+        <div class="mx-auto">
+            <div class="navigasi-pos">
+                <a href="Dashboard.html">
+                    <img src="assets/POS/icon1.svg" alt="">
+                </a>
+                <h5 class="mb-0 mx-auto font-weight-bold"> Tambah Barang </h5>
+            </div>
+           
+            <div class="card-pilihCabang">
+                <h4> Tambah Barang </h4>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Yang Bertanggung Jawab </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Contoh : Owner UMKM, Supplier, Cabang Lain">
+                    </div>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Nama Barang </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Masukkan Nama Barang..">
+                    </div>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Harga Beli </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Contoh : Rp.20.000">
+                    </div>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Harga Jual </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Contoh : Rp.20.000">
+                    </div>
+                </div>
+                <div class="stokBarang">
+                    <div class="produk-item d-block p-2">
+                        <div class="textStokBarang">
+                            <div class="mb-2" style="color: #000; background-color: #fff;  flex: none;order: 0;flex-grow: 1;"> Stok Barang </div>
+                            <a href="#" style="font-size: 12px;"> + Tambah Satuan Unit </a>
+                        </div>           
+                        <div class="wadah-jumlahBarang">
+                            <div class="input-group mb-3 w-100">
+                                <input type="text" class="form-control" placeholder="Tuliskan dalam angka..">
+                            </div>
+                            <div class="dropdown w-80 d-block">
+                                <button class="btn btn-secondary dropdown-toggle w-100 "
+                                    style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Berat
+                                </button>
+                                <div class="dropdown-menu w-80" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#"> Selesai </a>
+                                    <a class="dropdown-item" href="#"> Proses </a>
+                                    <a class="dropdown-item" href="#"> Dibatalkan </a>
+                                </div>
+                            </div>
+                        </div>         
+                    </div>
+                    <div class="produk-item d-block p-2">
+                        <div class="textStokBarang">
+                            <div class="mb-2" style="color: #000; background-color: #fff;  flex: none;order: 0;flex-grow: 1;"> Jumlah Penggunaan per transaksi </div>
+                        </div>           
+                        <div class="wadah-jumlahBarang">
+                            <div class="input-group mb-3 w-100">
+                                <input type="text" class="form-control" placeholder="Tuliskan dalam angka..">
+                            </div>
+                            <div class="dropdown w-80 d-block">
+                                <button class="btn btn-secondary dropdown-toggle w-100 "
+                                    style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Berat
+                                </button>
+                                <div class="dropdown-menu w-80" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#"> Selesai </a>
+                                    <a class="dropdown-item" href="#"> Proses </a>
+                                    <a class="dropdown-item" href="#"> Dibatalkan </a>
+                                </div>
+                            </div>
+                        </div>         
+                    </div>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Kategori Barang </div>
+                    <div class="dropdown w-100 d-block mb-3">
+                        <button class="btn btn-secondary dropdown-toggle w-100 "
+                            style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kategori Barang
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"> Selesai </a>
+                            <a class="dropdown-item" href="#"> Proses </a>
+                            <a class="dropdown-item" href="#"> Dibatalkan </a>
+                        </div>
+                    </div>
+                    <a href="#" class="mb-2 d-block"> + Tambahkan Kategori </a>
+                </div>
+                <div class="produk-item d-block p-2">
+                    <div class="mb-2" style="color: #000; background-color: #fff;"> Pilih penempatan simpan barang </div>
+                    <div class="dropdown w-100 d-block">
+                        <button class="btn btn-secondary dropdown-toggle w-100 "
+                            style=" background-color: #fff; color: #000; border: 1px solid #E0E0E0;" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pilih penempatan
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"> Selesai </a>
+                            <a class="dropdown-item" href="#"> Proses </a>
+                            <a class="dropdown-item" href="#"> Dibatalkan </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+            <a href="shipping5.html" class="btn-tambahPengiriman text-light" style="list-style: none;  text-decoration: none; top: 1140px;">
+               Tambah Barang
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
